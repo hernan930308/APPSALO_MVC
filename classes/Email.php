@@ -38,7 +38,7 @@ class Email {
 
         $contenido = "<html>";
         $contenido .= "<p><strong>Hola " . $this->nombre . "</strong> Has creado tu cuenta en Appsalon, debes confirmarla presionando en el siguiente enlace</p>";
-        $contenido .= "<p>Presiona aquí: <a href='http://localhost:3000/confirmar-cuenta?token=" . 
+        $contenido .= "<p>Presiona aquí: <a href='https://polar-plateau-80567.herokuapp.com/confirmar-cuenta?token=" . 
         $this->token . "'>Confirmar Cuenta</a></p>";
         $contenido .= "<p>Si tú no solicitaste renovar esta cuenta, ignora este mensaje</p>";
         $contenido .= "</html>";
@@ -68,7 +68,7 @@ class Email {
         
                 $contenido = "<html>";
                 $contenido .= "<p><strong>Hola " . $this->nombre . "</strong> Has solicitado restablecer tu password, sigue eel siguiente enlace.</p>";
-                $contenido .= "<p>Presiona aquí: <a href='http://localhost:3000/recuperar?token=" . 
+                $contenido .= "<p>Presiona aquí: <a href='https://polar-plateau-80567.herokuapp.com/recuperar?token=" . 
                 $this->token . "'>Restablecer Pasword</a></p>";
                 $contenido .= "<p>Si tú no solicitaste renovar esta cuenta, ignora este mensaje</p>";
                 $contenido .= "</html>";
