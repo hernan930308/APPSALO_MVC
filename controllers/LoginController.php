@@ -159,7 +159,7 @@ class LoginController {
                     // Hashear el Password
                     $usuario->hashPassword();
 
-                    // Generar un Tpken único
+                    // Generar un Token único
                     $usuario->crearToken();
 
                     // Enviar el email
@@ -192,8 +192,6 @@ class LoginController {
        $token = s($_GET['token']);
 
        $usuario =  Usuario::where('token', $token);
-
-       var_dump($usuario);
 
        if(empty($usuario)) {
            // Mostrar mensaje de error
